@@ -1,5 +1,5 @@
-import io from 'socket.io-client';
-import { Socket } from 'socket.io-client';
+import { io } from 'socket.io-client';
+import type { Socket } from 'socket.io-client';
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Video, MessageSquare, Clock, Send, PhoneOff, FileText, Wifi, WifiOff, User } from 'lucide-react';
