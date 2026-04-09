@@ -34,7 +34,7 @@ const Session: React.FC = () => {
   const [newMessage, setNewMessage] = useState('');
   const [isConnected, setIsConnected] = useState(false);
   const [otherTyping, setOtherTyping] = useState<string | null>(null);
-  const socketRef = useRef<Socket | null>(null);
+  const socketRef = useRef<SocketType | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const typingTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
